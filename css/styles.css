@@ -509,8 +509,12 @@ img.decorative-line {
 }
 
 .navbar .navbar-brand img {
+	transition: width 0.5s ease;
+	width: 180px;	
+}
+
+.navbar.navbar-default.navbar-fixed-top.top-nav-collapse img {
 	width: 100px;
-	height: 26px;
 }
 
 /* Menu links */
