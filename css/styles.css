@@ -35,7 +35,7 @@ Colors:
 - Darkest, navbar, first background: #1a1b20
 - Darker, second background: #24252c
 - Dark, nav-pills: #52555f
-- Green, regular buttons: #fab411
+- Green, regular buttons: #2196F3
 - Dark green, buttons on green: #00763a
 - Text: #fff
 ******************************************/
@@ -79,7 +79,7 @@ p.seventy-percent-width {
 }
 
 a {
-	color: #fab411;
+	color: #2196F3;
 	text-decoration: none;
 }
 
@@ -101,9 +101,9 @@ img.decorative-line {
 	height: 42px;
 	padding-right: 34px;
 	padding-left: 34px;
-	border: 1px solid #fab411;
+	border: 1px solid #2196F3;
 	border-radius: 50px;
-	background-color: #fab411;
+	background-color: #2196F3;
 	color: #fff;
 	font: 500 15px/40px "Ubuntu", sans-serif;
 	transition: border .3s ease, background-color .3s ease, color .3s ease;
@@ -114,15 +114,15 @@ img.decorative-line {
 	margin-top: 20px;
 	padding-right: 38px;
 	padding-left: 38px;
-	border: 1px solid #fab411;
+	border: 1px solid #2196F3;
 	border-radius: 50px;
-	background-color: #fab411;
+	background-color: #2196F3;
 	font: 500 18px/51px "Ubuntu", sans-serif;
 }
 
 .button-solid:hover,
 .button-solid.large:hover {
-	border: 1px solid #25c86a;
+	border: 1px solid #2196F3;
 	background-color: transparent;
 	color: #fff;
 	text-decoration: none;
@@ -143,8 +143,8 @@ img.decorative-line {
 }
 
 .button-outline:hover {
-	border: 1px solid #25c86a;
-	background-color: #25c86a;
+	border: 1px solid #2196F3;
+	background-color: #2196F3;
 }
 
 .form-control-input {
@@ -173,9 +173,9 @@ img.decorative-line {
 	display: block;
 	width: 100%;
 	height: 40px;
-	border: 1px solid #fab411;
+	border: 1px solid #2196F3;
 	border-radius: 4px;
-	background-color: #fab411;
+	background-color: #2196F3;
 	color: #fff;
 	font: 500 16px/36px "Ubuntu", sans-serif;
 	transition: background-color .3s ease, color .3s ease;
@@ -603,7 +603,7 @@ img.decorative-line {
 	position: relative;
 	width: 100%;
 	min-height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("http://placehold.it/1920x1080/393d48/7c7e85/") center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../images/header-background.jpg") center no-repeat;
 	background-size: cover;
 }
 
@@ -825,7 +825,7 @@ img.decorative-line {
 .duration {
 	padding-top: 60px;
 	padding-bottom: 90px;
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('http://placehold.it/1920x1080/393d48/7c7e85/') center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/duration-background.jpg') center no-repeat;
 	background-size: cover;
 }
 
@@ -847,8 +847,8 @@ img.decorative-line {
 	height: 50px;
 	padding-top: 10px;
 	border-radius: 50px;
-	border: 2px solid #fab411;
-	background-color: #fab411;
+	border: 2px solid #2196F3;
+	background-color: #2196F3;
 	color: #fff;
 	font: 500 24px/1.2em "Ubuntu", sans-serif;
 	text-align: center;
@@ -906,8 +906,8 @@ img.decorative-line {
 
 .details .nav-pills li.active a,
 .details .nav-pills li a:hover {
-	border: 1px solid #fab411;
-	background-color: #fab411;
+	border: 1px solid #2196F3;
+	background-color: #2196F3;
 	color: #fff;
 }
 
@@ -963,7 +963,7 @@ img.decorative-line {
 	padding-top: 2px;
 	margin-right: 10px;
 	border-radius: 50px;
-	background-color: #fab411;
+	background-color: #2196F3;
 	text-align: center;
 	transition: background-color 0.3s ease;
 }
@@ -973,7 +973,7 @@ img.decorative-line {
 }
 
 .panel-group .panel-title:hover a.collapsed .circle-numbering {
-	background-color: #fab411;
+	background-color: #2196F3;
 }
 
 .panel-group .panel-title a .panel-title-text {
@@ -1051,7 +1051,7 @@ img.decorative-line {
 .details .tab-content .tab-c span.fa {
 	float: left;
 	margin-right: 20px;
-	color: #fab411;
+	color: #2196F3;
 }
 
 .details .tab-content .tab-c h4 {
@@ -1070,7 +1070,7 @@ img.decorative-line {
 .pricing {
 	padding-top: 60px;
 	padding-bottom: 90px;
-	background: linear-gradient(rgba(0, 187, 92, 0.0), rgba(0, 187, 92, 0.0)), url('http://placehold.it/1920x1080/393d48/7c7e85/') center no-repeat;
+	background: linear-gradient(rgba(0, 187, 92, 0.0), rgba(0, 187, 92, 0.0)), url('../images/duration-background.jpg') center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -1092,8 +1092,8 @@ img.decorative-line {
 }
 
 .pricing .button-solid {
-	border: 1px solid #fab411;
-	background-color: #fab411;
+	border: 1px solid #2196F3;
+	background-color: #2196F3;
 }
 
 .pricing .button-solid:hover {
@@ -1138,13 +1138,13 @@ img.decorative-line {
 /***********************/
 .facts-1 {
 	padding-bottom: 75px;
-	background-color: #fab411;
+	background-color: #2196F3;
 }
 
 .facts-1 .facts-1-image-pane {
 	height: 350px;
 	margin: auto;
-	background: url('http://placehold.it/1920x1080/858ca1/fff/') center no-repeat;
+	background: url('../images/facts-1.jpg') center no-repeat;
 	background-size: cover;
 }
 
@@ -1169,7 +1169,7 @@ img.decorative-line {
 /***********************/
 .facts-2 {
 	padding-bottom: 75px;
-	background-color: #fab411;
+	background-color: #2196F3;
 }
 
 .facts-2 hr.under-heading {
@@ -1190,7 +1190,7 @@ img.decorative-line {
 .facts-2 .facts-2-image-pane {
 	height: 350px;
 	margin: auto;
-	background: linear-gradient(rgba(255, 99, 30, 0.0), rgba(255, 99, 30, 0.0)), url('http://placehold.it/1920x1080/858ca1/fff/') center no-repeat;
+	background: linear-gradient(rgba(255, 99, 30, 0.0), rgba(255, 99, 30, 0.0)), url('../images/facts-2.jpg') center no-repeat;
 	background-size: cover;
 }
 
@@ -1230,7 +1230,7 @@ img.decorative-line {
 	width: 100%;
 	height: 100%;
 	border-radius: 6px;
-	background: rgba(0, 206, 82, 0.8);
+	background: rgba(33, 152, 243, 0.8);
 	color: #fff;
 	opacity: 0;
 	text-align: center;
@@ -1281,7 +1281,7 @@ img.decorative-line {
 
 .instructor-pane .fa-stack a:hover .fa-stack-1x,
 .instructor-pane .fa-stack a .fa-stack-2x {
-    color: #fab411;
+    color: #2196F3;
 }
 
 /* Magnific Popup Instructor Details Content */
@@ -1460,8 +1460,8 @@ img.decorative-line {
 }
 
 .endorsement .button-solid {
-	border: 1px solid #fab411;
-	background-color: #fab411;
+	border: 1px solid #2196F3;
+	background-color: #2196F3;
 }
 
 .endorsement .button-solid:hover {
@@ -1525,7 +1525,7 @@ img.decorative-line {
 
 .footer .social-icons-container .fa-stack a:hover .fa-stack-1x,
 .footer .social-icons-container .fa-stack a .fa-stack-2x {
-    color: #fab411;
+    color: #2196F3;
 }
 
 .footer form {
@@ -1590,7 +1590,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #fab411; 
+	background-color: #2196F3; 
 }
 
 
@@ -2002,7 +2002,7 @@ a:hover.back-to-top {
 	}
 
 	.header h1 {
-		margin-top: 70px;
+		margin-top: 10px;
 	}
 	
 	.details {
@@ -2066,4 +2066,8 @@ a:hover.back-to-top {
 	.footer form .form-group.second {
 		width: 174px;
 	}
+}
+
+#js-rotating {
+	color: #2196F3;
 }

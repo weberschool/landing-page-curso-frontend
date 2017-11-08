@@ -47,10 +47,13 @@
     if (!$(this).parent().hasClass('dropdown'))
         $(".navbar-collapse").collapse('hide');
 	});
+
+	/* YTPLAYER FOR HEADER VIDEO BACKGROUND */
+	$(".player").mb_YTPlayer();
 	
 	
 	/* COUNTDOWN TIMER */
-	$('#clock').countdown('2017/12/30 12:34:56') /* change here your "countdown to" date */
+	$('#clock').countdown('2017/11/18 09:00:00') /* change here your "countdown to" date */
 	.on('update.countdown', function(event) {
 		var format = '<span class="counter-number">%D<br><span class="timer-text">Days</span></span><span class="separator">:</span><span class="counter-number">%H<br><span class="timer-text">Hours</span></span><span class="separator">:</span><span class="counter-number">%M<br><span class="timer-text">Minutes</span></span><span class="separator">:</span><span class="counter-number">%S<br><span class="timer-text">Seconds</span></span>';
 			
@@ -142,7 +145,20 @@
             event.preventDefault();
             submitForm();
         }
-    });
+	});
+	
+	/* MORPHTEXT FOR ROTATING TEXT IN HEADER */
+	$("#js-rotating").Morphext({
+		// The [in] animation type. Refer to Animate.css for a list of available animations.
+		animation: "fadeIn",
+		// An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+		separator: ",",
+		// The delay between the changing of each phrase in milliseconds.
+		speed: 2000,
+		complete: function () {
+			// Called after the entrance animation is executed.
+		}
+	});
 
     function submitForm() {
         // initiate variables with form content

@@ -90,52 +90,92 @@
 	<!-- HEADER -->
 	<header id="header" class="header">
 		<div class="flex-container-wrapper"> <!-- IE fix for vertical alignment in flex box -->
-			<div class="header-content">
-				<div class="container">
-					<div class="row">
-						<div class="header-content-wrapper">
-							<div class="col-md-6">
-								<h1>Desenvolvedor Web Front-End</h1>
-								<p>Adquira as habilidades necessárias para se tornar um Desenvolvedor Web Front-End e construa páginas web responsivas e otimizadas para exibição em mobile e desktop.</p>
-								<div class="countdown text-center">
-									<span id="clock"></span>
-								</div>
+			<div class="header-content video-section">
+					<div class="pattern-overlay">
+						<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=W02gqzO5OCY',containment:'.video-section', quality:'highres', autoPlay:true, showControls: false, startAt:0, stopAt: 15, mute:true, opacity: 1}"></a>
+						<div class="container">
+							<div class="row">
+								<div class="header-content-wrapper">
+									<div class="col-md-6">
+										<h1>Desenvolvedor Web Front-End <br> Like A <span id="js-rotating">Pro, Boss, Star</span></h1>
+										<p>Adquira as habilidades necessárias para se tornar um Desenvolvedor Web Front-End e construa páginas web responsivas e otimizadas para exibição em mobile e desktop.</p>
+										<div class="countdown text-center">
+											<span id="clock"></span>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<form id="RegistrationForm" data-toggle="validator">
+											<p><strong>Nome *</strong></p>
+											<div class="form-group">
+												<input type="text" class="form-control-input" id="firstname" placeholder="Nome" required>
+												<div class="help-block with-errors"></div>
+											</div>
+	
+											<p><strong>Sobrenome *</strong></p>
+											<div class="form-group">
+												<input type="text" class="form-control-input" id="lastname" placeholder="Sobrenome" required>
+												<div class="help-block with-errors"></div>
+											</div>
+	
+											<p><strong>Telefone *</strong></p>
+											<div class="form-group">
+												<input type="text" class="form-control-input" id="phone" placeholder="Telefone" required>
+												<div class="help-block with-errors"></div>
+											</div>
+											
+											<p><strong>E-mail *</strong></p>
+											<div class="form-group">
+												<input type="email" class="form-control-input" id="email" placeholder="E-mail" required>
+												<div class="help-block with-errors"></div>
+											</div>
+	
+											<!-- <div class="form-group">
+												<input type="checkbox" id="terms" value="Agreed-to-Terms" required> Agree to our <a class="show-terms popup-with-move-anim" href="#terms-and-conditions">terms and conditions</a>
+												<div class="help-block with-errors"></div>
+											</div> -->
+	
+											<!-- Magnific Popup Terms And Conditions Content -->
+											<!-- mfp-hide class is required to keep the content hidden until the visitor clicks the button -->
+											<!-- <div id="terms-and-conditions" class="terms-and-conditions-container zoom-anim-dialog mfp-hide">
+												<div class="row">
+													<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+													<div class="col-md-12">
+														<h3>Terms & Conditions</h3>
+														<hr>
+														<h4>1. Introduction</h4>
+														<p>Website terms and conditions may perform a number of different roles. They may be used to satisfy legal disclosure obligations, to grant users rights to use website materials, to impose acceptable use obligations, to limit (or attempt to limit) warranties and disclaim (or attempt to disclaim) liabilities, and more generally to structure the legal relationships between the website operator and users.</p>
+														<h4>2. Terms List</h4>
+														<ul>
+															<li>License to use website</li>
+															<li>Limitations of liability</li>
+															<li>Breaches of these terms and conditions</li>
+															<li>Registrations and authorizations</li>
+															<li>These website terms and conditions</li>
+														</ul>
+														<h4>3. Reasonableness Details</h4>
+														<p>This terms and conditions document covers some of the same ground as our website disclaimer and website copyright notice documents. It should be used in conjunction with a privacy policy document. The terms and conditions contain the following sections.</p>
+														<h4>4. Credibility Conditions</h4>		
+														<p>The types of personal information collected, and the uses to which it is typically put, depend in part upon the type of website and business that is collecting the information. An ecommerce store, for example, will collect or generate customer name and address information, payment information and order information. </p>
+														<div class="highlight-box">
+															<p>The classes of personal information will be put to different uses. For example, address information will be used for delivering products, and may also be used in marketing; whereas payment information will be used to collect payments and for accounting purposes. Some kinds of website – notably social networking websites and websites with social networking features – may collect and process huge amounts of personal information.</p>
+														</div>
+														<div class="buttons">
+															<a class="button-outline mfp-close as-button" href="#header">BACK</a>
+														</div>
+													</div>
+												</div>
+											</div> -->
+											
+											<button type="submit" class="form-control-submit-button">GARANTIR MINHA VAGA</button>
+											<div class="form-message">
+												<div id="msgSubmit" class="h3 text-center hidden"></div>
+											</div>
+										</form>
+									</div> <!-- end of col-md-6 -->
+								</div> <!-- end of header-content-wrapper -->
 							</div>
-							<div class="col-md-6">
-								<form id="RegistrationForm" data-toggle="validator">
-									<p><strong>Nome *</strong></p>
-									<div class="form-group">
-										<input type="text" class="form-control-input" id="firstname" placeholder="Nome" required>
-										<div class="help-block with-errors"></div>
-									</div>
-
-									<p><strong>Sobrenome *</strong></p>
-									<div class="form-group">
-										<input type="text" class="form-control-input" id="lastname" placeholder="Sobrenome" required>
-										<div class="help-block with-errors"></div>
-									</div>
-
-									<p><strong>Telefone *</strong></p>
-									<div class="form-group">
-										<input type="text" class="form-control-input" id="phone" placeholder="Telefone" required>
-										<div class="help-block with-errors"></div>
-									</div>
-									
-									<p><strong>E-mail *</strong></p>
-									<div class="form-group">
-										<input type="email" class="form-control-input" id="email" placeholder="E-mail" required>
-										<div class="help-block with-errors"></div>
-									</div>
-									
-									<button type="submit" class="form-control-submit-button">GARANTIR MINHA VAGA</button>
-									<div class="form-message">
-										<div id="msgSubmit" class="h3 text-center hidden"></div>
-									</div>
-								</form>
-							</div> <!-- end of col-md-6 -->
-						</div> <!-- end of header-content-wrapper -->
-					</div> <!-- end of row -->
-				</div> <!-- end of container -->
+						</div> <!-- end of container -->
+					</div>
 			</div> <!-- end of header-content -->
 		</div> <!-- end of IE vertical alignment fix -->
 	</header> <!-- end of header -->
@@ -153,55 +193,11 @@
 					</ol>
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"The most convenient way to learn how to sell online at an affordable price. I am glad I found Argo and I recommend it."</p>
-								<h5>Mary Fitzgerald</h5>
-							</div>
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"I was looking for an online resource to start learning how to sell online and I am very happy I found Argo Course."</p>
-								<h5>John Frown</h5>
-							</div>
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"My background has absolutely no connection with online selling but I managed to reach my goals in 2 months with Argo."</p>
-								<h5>Mike Town</h5>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"My boss pushed me to take this training course about selling online and now I am grateful he did. My skills are updated"</p>
-								<h5>Judy Smithfield</h5>
-							</div>
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"Online selling is all about analysis, planning and action. I've learned this in Argo Training Course and it didn't fail me."</p>
-								<h5>Ruben May</h5>
-							</div>
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"All those years spent losing a ton of potential customers, it almost scares me. Now I'm on top of the game and my team too."</p>
-								<h5>Sully McLane</h5>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"In a few words Argo Training Course is probably the best experience I ever had. Teachers are great and the community."</p>
-								<h5>Ron Blake</h5>
-							</div>
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"My only gripe with Argo Training Course is not finding it sooner. Now that I did I am very happy to lear about selling."</p>
-								<h5>Paula Jerry</h5>
-							</div>
-							<div class="col-md-4">
-								<img class="img-circle" src="http://placehold.it/110x110/aaa/393d48/" alt="customer testimonial">
-								<p class="mb-0">"Best value compared to the price. You will not find another training course about online selling as good as this one."</p>
-								<h5>Simone Finley</h5>
-							</div>
+							<div class="col-md-12">
+								<img class="img-circle" src="images/diego-leite.jpg" alt="customer testimonial">
+								<p class="mb-0">"Jonata é um excelente profissional. Muito do que sou hoje devo aos cursos, conversas e mentorias que tive com ele."</p>
+								<h5>Diego Leite @ MatrixLabs</h5>
+							</div>							
 						</div>
 					</div>
 				</div> <!-- end of quote -->
@@ -215,8 +211,8 @@
 		<div class="container">
 			<h2>Resumo</h2>
 			<img class="decorative-line" src="images/decorative-line.svg" alt="decorative line">
-			<p class="seventy-percent-width">Entenda em <strong>4 semanas</strong> os princípios de como funciona a Web e adquira conhecimentos práticos nas três linguagens que fundamentam todos os websites: HTML, CSS e JavaScript.</p>
-			<img class="img-responsive" src="http://placehold.it/900x367/aaa/393d48/" alt="dashboard">
+			<p class="seventy-percent-width">Entenda em <strong>4 semanas</strong> os princípios de como funciona a Web e adquira conhecimentos práticos nas três tecnologias que fundamentam todos os websites: HTML, CSS e JavaScript.</p>
+			<img class="img-responsive" src="images/resumo.png" alt="web developer">
 		</div> <!-- end of container -->
 	</div> <!-- end of overview -->
 	
@@ -226,43 +222,46 @@
 		<div class="container">
 			<h2 class="text-center">Duração</h2>
 			<img class="decorative-line" src="images/decorative-line.svg" alt="decorative line">
-			<p class="seventy-percent-width">Argo's training course will take you through 3 major stages of the online selling process and will help you design your own strategy. Find below this section the <a class="page-scroll" href="#details">details for each day</a></p>
+			<p class="seventy-percent-width">O curso <strong>Desenvolvedor Web Front-end</strong> foi dividio em 04 módulos semanais que irão do básico ao intermediário, mas permeia por alguns recursos avançados da Web. O curso é 100% prático, baseado em projetos, e segue uma <strong>metodologia moderna de ensino</strong> que permite transformar você em um desenvolvedor Front-End desejável pelo mercado de trabalho. <a class="page-scroll" href="#details">Conheça os detalhes de cada dia</a></p>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-6">
 					<div class="duration-pane">
 						<div class="day-circle">1</div>
-						<h3>Conhecendo a Web</h3>
-						<p>We'll start the training course by making a thorough analysis of our business environment</p>
+						<h3>A Web do jeito certo!</h3>
+						<p>O foco será entender a Web, sua história, o estado atual e a importância do desenvolvedor front-end para grandes empresas. Além disso, exploraremos as principais tecnologias da Web, como por exemplo: <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Web Semântica</strong>, <strong>Acessibilidade</strong> e <strong>Metatags</strong>. O objetivo dessa semana é montar um website com suas informações para contato e publicar no <a href="#">github pages</a>.</p>
 						<ul class="fa-ul">
 							<li><i class="fa-li fa fa-square"></i>Data: <strong>18/11 e 19/11</strong></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-6">
 					<div class="duration-pane">
 						<div class="day-circle">2</div>
-						<h3>HTML, CSS e JS</h3>
-						<p>After collecting the right market input we can dive into creating efficient sales strategies</p>
+						<h3>Desvendando o CSS3</h3>
+						<p>Nessa etapa serão explorados recursos avançados do CSS3, que permitirão você montar sites inscríveis a fim de melhorar a experiência do usuário. A meta para esse final de semana será deixar sua página HTML idêntica ao design que disponibilizaremos durante o curso, ele possui diversos detalhes que serão todos reproduzidos usando apenas CSS3.</p>
 						<ul class="fa-ul">
 							<li><i class="fa-li fa fa-square"></i>Data: <strong>25/11 e 26/11</strong></li>
 						</ul>
 					</div>
-				</div>
-				<div class="col-md-3">
+				</div>				
+			</div> <!-- end of row -->
+
+			<div class="row">
+				<div class="col-md-6">
 					<div class="duration-pane">
 						<div class="day-circle">3</div>
-						<h3>Manipulação de DOM</h3>
-						<p>Campaigns need to be evaluated in order to understand the results and prepare for the future</p>
+						<h3>Integração com APIs e Ajax</h3>
+						<p>Adicionaremos recursos avançados à nossa página Web usando a linguagem de programação <strong>JavaScript</strong>. Mostraremos como utilizar os recursos de <strong>Geolocation</strong> e <strong>HttpRequest</strong> pra tornar sua página rica e dinâmica. O projeto dessa etapa será uma busca com autocomplete utilizando as APIs do Google Maps a partir de um endereço e adicionar marcadores a ele.</p>
 						<ul class="fa-ul">
 							<li><i class="fa-li fa fa-square"></i>Data: <strong>02/12 e 03/12</strong></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-6">
 					<div class="duration-pane">
 						<div class="day-circle">4</div>
-						<h3>Otimizando Websites</h3>
-						<p>Campaigns need to be evaluated in order to understand the results and prepare for the future</p>
+						<h3>Construindo uma WeberFlix</h3>
+						<p>Etapa onde serão consolidados todo o conhecimento adquirido, além de aplicar algumas técnicas de alta performance. Desenvolveremos um <strong>catálogo do Netflix</strong> com alguns recursos avançados. Você será capaz de desenvolver o projeto com <strong>qualidade</strong> e <strong>velocidade</strong>, requisitos essenciais para quem deseja trabalhar em grandes empresas como Desenvolvedor Web Front-end.</p>
 						<ul class="fa-ul">
 							<li><i class="fa-li fa fa-square"></i>Data: <strong>09/12 e 10/12</strong></li>
 						</ul>
@@ -285,7 +284,7 @@
 				<li class="active"><a href="#tab_a" data-toggle="tab">SEMANA 1</a></li>
 				<li><a href="#tab_b" data-toggle="tab">SEMANA 2</a></li>
 				<li><a href="#tab_c" data-toggle="tab">SEMANA 3</a></li>
-				<li><a href="#tab_c" data-toggle="tab">SEMANA 4</a></li>
+				<li><a href="#tab_d" data-toggle="tab">SEMANA 4</a></li>
 			</ul>
 			</div>
 			
@@ -300,13 +299,13 @@
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h4 class="panel-title clearfix">
 											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-												<span class="circle-numbering">A</span><span class="panel-title-text">Analyze The Market</span>
+												<span class="circle-numbering">A</span><span class="panel-title-text">História da Web</span>
 											</a>
 										</h4>
 									</div>
 									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 										<div class="panel-body">
-											In order to design a successful marketing strategy you need to understand your business environment very well. In this starting chapter, we'll give you the right tools and methods to analyze the market and gather data.
+											Você conhecerá a história por trás das linguagens que serão ensinadas neste curso, a Web e da nossa posição atual como desenvolvedores Web.
 										</div>
 									</div>
 								</div>
@@ -314,13 +313,13 @@
 									<div class="panel-heading" role="tab" id="headingTwo">
 										<h4 class="panel-title clearfix">
 											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-												<span class="circle-numbering">B</span><span class="panel-title-text">The Right Conclusions</span>
+												<span class="circle-numbering">B</span><span class="panel-title-text">HTML e CSS</span>
 											</a>
 										</h4>
 									</div>
 									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 										<div class="panel-body">
-											With all that market data it's very easy to feel overwhelmed so we've prepared a few techniques to help you draw the right conclusions from the market reports. Then you will feel confident enough to plan your sales strategy.
+											Você aprenderá como funciona a linguagem de marcação HTML e seus principais recursos. Saberá como estilizar seus documentos HTML usando a linguagem CSS para que fiquem bonitas e agradáveis.
 										</div>
 									</div>
 								</div>
@@ -328,13 +327,27 @@
 									<div class="panel-heading" role="tab" id="headingThree">
 										<h4 class="panel-title clearfix">
 											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-												<span class="circle-numbering">C</span><span class="panel-title-text">Add More Value</span>
+												<span class="circle-numbering">C</span><span class="panel-title-text">Web Semântica e Acessibilidade</span>
 											</a>
 										</h4>
 									</div>
 									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 										<div class="panel-body">
-											Especially in crowded marketplaces, it can be difficult to differentiate your course or service from the competition. Argo's course will give you the right skills to help you identify hidden value and present it to your customers.
+											Você aprenderá como organizar a informação das suas páginas de maneira legível para computadores e máquinas poderem trabalhar em cooperação com os humanos. Além de torna-los acessíveis para que todos os usuários podem ter igual acesso à informação e funcionalidade.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingFour">
+										<h4 class="panel-title clearfix">
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												<span class="circle-numbering">D</span><span class="panel-title-text">Pulicando seu site na internet</span>
+											</a>
+										</h4>
+									</div>
+									<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+										<div class="panel-body">
+											Ensinaremos você a disponilizar um website gratuitamente no <a href="https://pages.github.com/">Github Pages</a> para que mostre aos amigos e familiares. Diga adeus ao FTP, usaremos a ferramenta Git pra colocar no servidor Web.
 										</div>
 									</div>
 								</div>
@@ -345,10 +358,9 @@
 							<!-- Image Gallery Swiper -->
 							<div class="my-swiper-container img-rounded">
 								<div class="swiper-wrapper">
-									<div class="swiper-slide"><a href="http://placehold.it/820x600/aaa/393d48/" class="popup-link" data-effect="fadeIn"><img class="img-responsive" src="http://placehold.it/820x600/aaa/393d48/" alt="software image"></a></div>
-									<div class="swiper-slide"><a href="http://placehold.it/820x600/aaa/393d48/" class="popup-link" data-effect="fadeIn"><img class="img-responsive" src="http://placehold.it/820x600/aaa/393d48/" alt="software image"></a></div>
-									<div class="swiper-slide"><a href="http://placehold.it/820x600/aaa/393d48/" class="popup-link" data-effect="fadeIn"><img class="img-responsive" src="http://placehold.it/820x600/aaa/393d48/" alt="software image"></a></div>
-									<div class="swiper-slide"><a href="http://placehold.it/820x600/aaa/393d48/" class="popup-link" data-effect="fadeIn"><img class="img-responsive" src="http://placehold.it/820x600/aaa/393d48/" alt="software image"></a></div>
+									<div class="swiper-slide"><a href="images/course-details-1.jpg" class="popup-link" data-effect="fadeIn"><img class="img-responsive" src="images/course-details-1.jpg" alt="software image"></a></div>
+									<div class="swiper-slide"><a href="images/course-details-2.jpg" class="popup-link" data-effect="fadeIn"><img class="img-responsive" src="images/course-details-2.jpg" alt="software image"></a></div>
+									<div class="swiper-slide"><a href="images/course-details-4.jpg" class="popup-link" data-effect="fadeIn"><img class="img-responsive" src="images/course-details-4.jpg" alt="software image"></a></div>
 								</div>
 								<!-- Add Arrows -->
 								<div class="swiper-button-next"></div>
@@ -362,18 +374,18 @@
 				<div class="tab-pane tab-b fade" id="tab_b">
 					<div class="row">
 						<div class="col-md-6 col-lg-7">
-							<img class="img-responsive img-rounded" src="http://placehold.it/1280x790/aaa/393d48/" alt="details image">
+							<img class="img-responsive img-rounded" src="images/students.jpg" alt="details image">
 						</div>
 						<div class="col-md-6 col-lg-5">
 							<div class="text-pane">
-								<h3>Sales Planning And Marketing Strategies</h3>
-								<p>Argo's training course enables you to create the best sales plan using <a href="#your-link-here">Kotler's methodology</a> and sets up your course or service for success.</p>
+								<h3>Desvendando o CSS3</h3>
+								<p>O curso <strong>Desenvolvedor Web Front-End</strong> vai mergulhar no mundo do CSS3. Ensinará você a usar os principais recursos que deixarão suas páginas Web idênticas ao PSD fornecido pelo designer. Depois desse módulo você será capaz de:</p>
 								<ul class="fa-ul">
-									<li><i class="fa-li fa fa-check-square-o"></i>Proven strategies which work in real life scenarios</li>
-									<li><i class="fa-li fa fa-check-square-o"></i>Effortles planning for time constrained people</li>
-									<li><i class="fa-li fa fa-check-square-o"></i>High success ratios for those who are commited</li>
+									<li><i class="fa-li fa fa-check-square-o"></i>Realizar efeitos de transição usando apenas CSS</li>
+									<li><i class="fa-li fa fa-check-square-o"></i>Deixar o site igual ao que foi desenhado</li>
+									<li><i class="fa-li fa fa-check-square-o"></i>Tornar sua página confortável no desktop, mobile e tablet</li>
 								</ul>
-								<a class="button-solid page-scroll" href="#header">REGISTER NOW</a>
+								<a class="button-solid page-scroll" href="#header">GARANTIR MINHA VAGA</a>
 							</div>
 						</div>
 					</div>
@@ -385,27 +397,43 @@
 						<div class="col-md-6 col-lg-5">
 							<div class="text-pane">
 								<div class="features-row clearfix">
-									<span class="fa fa-flag fa-3x"></span>
-									<h4>Campaign Evaluation</h4>
-									<p class="clearfix">In day 3 of Argo training course we're going to take a look at campaign evaluation methods.</p>
+									<span class="fa fa-map fa-3x"></span>
+									<h4>Google Maps</h4>
+									<p class="clearfix">Aprenda a trabalhar com a API do Google Maps e faça projetos incríveis com ela.</p>
 								</div>
 								<div class="features-row clearfix">
-									<span class="fa fa-calendar-check-o fa-3x"></span>
-									<h4>Performance Reports</h4>
-									<p class="clearfix">Everyone's scared about generating reports so we've prepared a few great tips & tricks.</p>
+									<span class="fa fa-exchange fa-3x"></span>
+									<h4>Ajax</h4>
+									<p class="clearfix">Faça requesições assíncronas de informação usando XMLHTTPRequest (ou XHR) e melhore a experiência do seu usuário.</p>
 								</div>
 								<div class="features-row clearfix">
-									<span class="fa fa-comments-o fa-3x"></span>
-									<h4>What To Do Next</h4>
-									<p class="clearfix">Clearly you can't stop learning about your business after 3 days so we'll point you in the right direction.</p>
+									<span class="fa fa-map-marker fa-3x"></span>
+									<h4>Geolocation</h4>
+									<p class="clearfix">Crie páginas inteligentes pegando a posição latitude e longitude do seu usuário.</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-7">
-							<img class="img-responsive img-rounded" src="http://placehold.it/1280x790/aaa/393d48/" alt="details image">
+							<img class="img-responsive img-rounded" src="images/students2.jpg" alt="details image">
 						</div>
 					</div>
 				</div> <!-- end of tab_c -->
+
+				<!-- Tab_d -->
+				<div class="tab-pane tab-b fade" id="tab_d">
+						<div class="row">
+							<div class="col-md-6 col-lg-7">
+								<img class="img-responsive img-rounded" src="images/netflix.jpg" alt="details image">
+							</div>
+							<div class="col-md-6 col-lg-5">
+								<div class="text-pane">
+									<h3>Construindo uma WeberFlix</h3>
+									<p>Esse é o projeto final, é aqui que você mostrará todos os conhecimentos adquiridos durante o curso. E principalmente, adicionaremos velocidade ao seu desenvolvimento. Ensinaremos técnicas e ferramentas que ajudarão você a ganhar produtividade no seu trabalho. Esse módulo com certeza é a cereja do bolo!</p>
+									<a class="button-solid page-scroll" href="#header">GARANTIR MINHA VAGA</a>
+								</div>
+							</div>
+						</div>
+					</div> <!-- end of tab_d -->
 			</div> <!-- end of tab content -->
 		</div> <!-- end of container -->
 	</div> <!-- end of details -->
@@ -416,10 +444,10 @@
 		<div class="container">
 			<h2>Preço</h2>
 			<img class="decorative-line" src="images/decorative-line.svg" alt="decorative line">
-			<p class="seventy-percent-width">When you register you get access to the entire 3 days course which will enable you to understand your business environment, devise a realistic development strategy and how to effectively act on it. Of course we'll also teach you how to evaluate your actions and take the right decisions.</p>
+			<p class="seventy-percent-width">Quando se registrar, você receberá um e-mail confirmando o pagamento. Começaremos a enviar e-mails para você <strong>1 semana antes</strong> do curso começar. Enviaremos instruções e materiais técnicos para você estudar em casa e no horário que desejar.</p>
 			<!-- <p class="above-price">$199 Regular</p> -->
-			<p class="price"><span class="price-value">06 x R$68</span> no cartão</p>
-			<p>Ou R$ 399 à vista</p>
+			<p class="price"><span class="price-value">6 x R$68 no cartão</span></p>
+			<p>Ou R$ 399 à vista no boleto</p>
 			<a class="button-solid page-scroll" href="#header">GARANTIR MINHA VAGA</a>
 		</div> <!-- end of container -->
 	</div> <!-- end of pricing -->
@@ -433,12 +461,12 @@
 		<div class="facts-1-text-pane">
 			<div class="facts-1-text-pane-container">
 				<div class="facts-wrapper">
-					<h3>Argo's Training Will...</h3>
+					<h3>A WeberSchool vai...</h3>
 					<ul class="zmdi-hc-ul">
-						<li><i class="zmdi-hc-li zmdi zmdi-check zmdi-hc-3x"></i>Teach you how to analyze and understand your business environment for better decision making</li>
-						<li><i class="zmdi-hc-li zmdi zmdi-check zmdi-hc-3x"></i>Help you find hidden value in your courses and services and launch them succesfully</li>
-						<li><i class="zmdi-hc-li zmdi zmdi-check zmdi-hc-3x"></i>Provide you with the best tactical ideas to act on your marketing strategy</li>
-						<li><i class="zmdi-hc-li zmdi zmdi-check zmdi-hc-3x"></i>Highly increase your confidence level to undertake bolder projects in your industry</li>
+						<li><i class="zmdi-hc-li zmdi zmdi-check zmdi-hc-3x"></i>Ensinar você a construir páginas Web responsivas com rapidez e eficiência</li>
+						<li><i class="zmdi-hc-li zmdi zmdi-check zmdi-hc-3x"></i>Aumentar sua confiança ao desenvolver com profissionais de alto nível</li>
+						<li><i class="zmdi-hc-li zmdi zmdi-check zmdi-hc-3x"></i>Ajudar você a conseguir uma boa colocação no mercado</li>
+						<li><i class="zmdi-hc-li zmdi zmdi-check zmdi-hc-3x"></i>Providenciar meios de evoluir seus conhecimentos através da comunidade WeberSchool</li>
 					</ul>
 				</div>
 			</div>
@@ -454,12 +482,12 @@
 		<div class="facts-2-text-pane">
 			<div class="facts-2-text-pane-container clearfix">
 				<div class="facts-wrapper">
-					<h3>Argo's Training Will Not...</h3>
+					<h3>A WeberSchool NÃO vai...</h3>
 					<ul class="zmdi-hc-ul">
-						<li><i class="zmdi-hc-li zmdi zmdi-close zmdi-hc-3x"></i>Waste 3 days of your life for nothing because the course is packed with highly valuable data</li>
-						<li><i class="zmdi-hc-li zmdi zmdi-close zmdi-hc-3x"></i>Provide you with untested methods and techniques because everything we teach is from real-life</li>
-						<li><i class="zmdi-hc-li zmdi zmdi-close zmdi-hc-3x"></i>Make you spend 199 dollars without improving your skills ten times more than you would imagine</li>
-						<li><i class="zmdi-hc-li zmdi zmdi-close zmdi-hc-3x"></i>Leave you stranded at the end of the course beacuse it will guide you towards reaching your goals</li>
+						<li><i class="zmdi-hc-li zmdi zmdi-close zmdi-hc-3x"></i>Desperdiçar 4 finais de semana da sua vida por nada, pois serão dias intensos com conteúdos valiosos</li>
+						<li><i class="zmdi-hc-li zmdi zmdi-close zmdi-hc-3x"></i>Providenciar métodos não testados, pois tudo que ensiaremos é do mundo real</li>
+						<li><i class="zmdi-hc-li zmdi zmdi-close zmdi-hc-3x"></i>Fazer você gastar 399 reais sem melhorar suas habilidades 10x mais do que você espera</li>
+						<li><i class="zmdi-hc-li zmdi zmdi-close zmdi-hc-3x"></i>Deixar você desamparado após a conclusão do curso, pois ajudaremos você a alcançar seus objetivos</li>
 					</ul>
 				</div>
 			</div>
@@ -490,13 +518,13 @@
 						</a>
 						<div class="instructor-social">
 							<span class="fa-stack fa">
-								<a href="#your-link-here">
+								<a href="https://www.twitter.com/jonataweber">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 								</a>
 							</span>
 							<span class="fa-stack fa">
-								<a href="#your-link-here">
+								<a href="https://www.linkedin.com/in/jonata-weber">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
 								</a>
@@ -547,62 +575,23 @@
 			<div class="row">
 				<div class="col-md-6">
 					<ul class="frequent-ul list-unstyled">
-						<li class="question clearfix"><span class="frequent-icon">Q</span> <h4 class="frequent-text">What happens after I register ?</h4></li>
-						<li class="answer clearfix"><span class="frequent-icon">A</span> <span class="frequent-text">Upon registration you will receive a link on your email address which redirects you to our online training course platform. There you will confirm your credentials.</span></li>
-						<li class="question clearfix"><span class="frequent-icon">Q</span> <h4 class="frequent-text">Is the course guaranteed, can I ask for refunds ?</h4></li>
-						<li class="answer clearfix"><span class="frequent-icon">A</span> <span class="frequent-text">Of course, the course is 100% guaranteed which means you can ask for a refund anytime and receive the full reimbursement of your money. So your investment is risk free.</span></li>
+						<li class="question clearfix"><span class="frequent-icon">Q</span> <h4 class="frequent-text">O que acontece depois que se inscrever ?</h4></li>
+						<li class="answer clearfix"><span class="frequent-icon">A</span> <span class="frequent-text">Uma vez que esteja devidamente registrado, você receberá um e-mail de confirmação de pagamento e 01 semana antes da primeira aula você receberá e-mails da WeberSchool com instruções e materiais técnicos.</span></li>
+						<li class="question clearfix"><span class="frequent-icon">Q</span> <h4 class="frequent-text">O curso tem garantia, posso pedir reembolso ?</h4></li>
+						<li class="answer clearfix"><span class="frequent-icon">A</span> <span class="frequent-text">Sim, claro! Você pode pedir reembolso quando quiser, o valor será devolvido integralmente. Não há riscos.</span></li>
 					</ul>
 				</div>
 				<div class="col-md-6">
 					<ul class="frequent-ul list-unstyled">
-						<li class="question clearfix"><span class="frequent-icon">Q</span> <h4 class="frequent-text">Are you sure the content is genuine ?</h4></li>
-						<li class="answer clearfix"><span class="frequent-icon">A</span> <span class="frequent-text">This training course stands on its own with original content based on real life case studies conducted by our instructors. We haven't used other online resources free or paid.</span></li>
-						<li class="question clearfix"><span class="frequent-icon">Q</span> <h4 class="frequent-text">Where do I go upon finishing the course ?</h4></li>
-						<li class="answer clearfix"><span class="frequent-icon">A</span> <span class="frequent-text">Last chapter of the online training is reserved for pointing you towards the right direction after completing all the materials in the course. So you know what to do next.</span></li>
+						<li class="question clearfix"><span class="frequent-icon">Q</span> <h4 class="frequent-text">Como vou saber que o conteúdo do curso ajudará na minha carreira ?</h4></li>
+						<li class="answer clearfix"><span class="frequent-icon">A</span> <span class="frequent-text">Nossos facilitadores possuem carreira sólida em desenvolvimento de software e trabalha para grandes empresas. Todo o conteúdo foi produzido por eles se baseando em projetos reais.</span></li>
+						<li class="question clearfix"><span class="frequent-icon">Q</span> <h4 class="frequent-text">E o que vem depois que concluir o curso ?</h4></li>
+						<li class="answer clearfix"><span class="frequent-icon">A</span> <span class="frequent-text">Todo aluno da WeberSchool tem direito a acessoria de carreira <strong>gratuita</strong>. Ajudaremos você a montar seu portifólio e o encaminharemos às empresas parceiras.</span></li>
 					</ul>
 				</div>
 			</div> <!-- end of row -->
 		</div> <!-- end of container -->
 	</div> <!-- end of frequent-questions -->
-	
-
-	<!-- STATISTICS -->
-	<div class="statistics">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<div class="number-container">
-					<p><span class="counter">250</span></p>
-					<p class="big-numbers-heading">Happy Students</p>
-					</div>
-					<div class="number-container">
-					<p><span class="counter">480</span></p>
-					<p class="big-numbers-heading">Delivered Projects</p>
-					</div>
-					<div class="number-container">
-					<p><span class="counter">642</span></p>
-					<p class="big-numbers-heading">Online Orders</p>
-					</div>
-					<div class="number-container">
-					<p><span class="counter">120</span></p>
-					<p class="big-numbers-heading">Staff Members</p>
-					</div>
-				</div>
-			</div> <!-- end of row -->
-		</div> <!-- end of container -->
-	</div> <!-- end of statistics -->
-
-	
-	<!-- ENDORSEMENT -->
-	<div class="endorsement">
-		<div class="container">
-			<div class="endorsement-wrapper">
-				<p class="seventy-percent-width">Argo's online sales training course is highly recommended to anyone intrested in developing their online sales skills, either for courses or services. I've taken this course last year and now I run my own business.</p>
-				<h5>Larry Volgen - StartUp Founder</h5>
-				<a class="button-solid page-scroll" href="#header">GARANTIR MINHA VAGA</a>
-			</div>
-		</div> <!-- end of container -->
-	</div> <!-- end of endorsement -->
 	
 	
 	<!-- FOOTER -->
@@ -630,44 +619,44 @@
 						<!-- Social Icons Container -->
 						<div class="social-icons-container">
 							<span class="fa-stack fa-lg">
-								<a href="#your-link-here">
+								<a href="https://fb.com/weberschool.com.br">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 								</a>
 							</span>
 							<span class="fa-stack fa-lg">
-								<a href="#your-link-here">
+								<a href="https://twitter.com/jonataweber">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 								</a>
 							</span>
-							<span class="fa-stack fa-lg">
+							<!-- <span class="fa-stack fa-lg">
 								<a href="#your-link-here">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
 								</a>
-							</span>
+							</span> -->
 							<span class="fa-stack fa-lg">
-								<a href="#your-link-here">
+								<a href="https://www.instagram.com/weber.school/">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
 								</a>
 							</span>
 							<span class="fa-stack fa-lg">
-								<a href="#your-link-here">
+								<a href="https://www.linkedin.com/in/jonata-weber">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
 								</a>
 							</span>
-							<span class="fa-stack fa-lg">
+							<!-- <span class="fa-stack fa-lg">
 								<a href="#your-link-here">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
 								</a>
-							</span>
+							</span> -->
 						</div> <!-- end of social icons container -->
-						<h4>Official Partners</h4>
-						<p>Delivery Services: <a>www.fastcompany.com</a> <br> Music Media Streaming: <a>www.musicstream.com</a></p>
+						<h4>Parceiros</h4>
+						<p>Club4Work: <a target="_blank" href="http://club4work.com.br/">www.club4work.com.br</a></p>
 					</div>
 				</div>
 				
@@ -676,15 +665,15 @@
 						<!-- Contact Form -->
 						<form id="ContactForm" data-toggle="validator">
 							<div class="form-group first">
-								<input type="text" class="form-control-input" id="cname" placeholder="Name" required>
+								<input type="text" class="form-control-input" id="cname" placeholder="Nome" required>
 							</div>
 							<div class="form-group second">
-								<input type="email" class="form-control-input" id="cemail" placeholder="Email" required>
+								<input type="email" class="form-control-input" id="cemail" placeholder="E-mail" required>
 							</div>
 							<div class="form-group third">
-								<textarea class="form-control-textarea" id="cmessage" placeholder="Write your message here" rows="4" required></textarea>
+								<textarea class="form-control-textarea" id="cmessage" placeholder="Escreva sua mensagem aqui" rows="4" required></textarea>
 							</div>
-							<button type="submit" class="form-control-submit-button">SUBMIT</button>
+							<button type="submit" class="form-control-submit-button">ENVIAR</button>
 							<div class="form-message">
 								<div id="cmsgSubmit" class="h3 text-center hidden"></div>
 							</div>
@@ -710,10 +699,12 @@
 	<script src="js/jquery.easing.min.js" type="text/javascript"></script> <!-- jQuery Easing v1.3 for smooth scrolling between anchors -->
 	<script src="js/jquery.countdown.min.js" type="text/javascript"></script> <!-- The Final Countdown v2.2.0 plugin for jQuery -->
 	<script src="js/swiper.min.js" type="text/javascript"></script> <!-- Swiper v3.4.2 for image gallery swiper -->
+	<script src="js/morphext.min.js" type="text/javascript"></script> <!-- Morphtext v2.4.4 for rotating text in the header -->
 	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script> <!-- Magnific Popup v1.1.0 for lightboxes -->
 	<script src="js/waypoints.min.js" type="text/javascript"></script> <!-- jQuery Waypoints v2.0.3 required by Counter-Up -->
 	<script src="js/jquery.counterup.min.js" type="text/javascript"></script> <!-- Counter-Up v1.0 for statistics -->
 	<script src="js/validator.min.js" type="text/javascript"></script> <!--  Validator.js v0.11.8 Bootstrap plugin that validates the registration form -->
+	<script src="js/jquery.mb.ytplayer.min.js" type="text/javascript"></script> <!-- YTPlayer for video header background -->
 	<script src="js/scripts.js" type="text/javascript"></script> <!-- Custom scripts -->
 	
 </body>
