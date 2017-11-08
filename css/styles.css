@@ -510,7 +510,7 @@ img.decorative-line {
 
 .navbar .navbar-brand img {
 	transition: width 0.5s ease;
-	width: 180px;	
+	width: 100px;	
 }
 
 .navbar.navbar-default.navbar-fixed-top.top-nav-collapse img {
@@ -1786,7 +1786,7 @@ a:hover.back-to-top {
 	}
 	
 	.navbar.top-nav-collapse {
-       	padding: 0 25px 0 15px;
+		padding: 0 25px 0 15px;
 		background-color: #1a1b20;
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
@@ -1799,6 +1799,10 @@ a:hover.back-to-top {
 	.navbar .navbar-brand {
 		margin-right: 16px;
 		margin-left: 0px;
+	}
+	
+	.navbar .navbar-brand img {
+		width: 180px;
 	}
 	
 	.navbar .nav.navbar-nav li a,
