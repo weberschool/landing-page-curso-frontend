@@ -1855,6 +1855,10 @@ a:hover.back-to-top {
 		text-align: left;
 	}
 
+	.header p.text-center {
+		text-align: center;
+	}
+
 	.header .countdown {
 		text-align: left;
 	}
