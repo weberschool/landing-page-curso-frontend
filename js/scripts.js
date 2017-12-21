@@ -60,7 +60,7 @@
 		$(this).html(event.strftime(format));
 	})
 	.on('finish.countdown', function(event) {
-	$(this).html('This offer has expired!')
+	$(this).html('Inscrições encerradas!')
 		.parent().addClass('disabled');
 	});
 	
