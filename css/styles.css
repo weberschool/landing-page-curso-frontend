@@ -915,6 +915,25 @@ img.decorative-line {
 	margin-top: 60px;
 }
 
+/************************/
+/*     09. OVERVIEW     */
+/************************/
+.community {
+	position: relative;
+	padding-top: 60px;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/duration-background.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.community p {
+	margin-bottom: 50px;
+}
+
+.community img {
+	margin-right: auto;
+	margin-left: auto;
+}
+
 /* Tab_a */
 .panel-group .panel {
     border: none;
@@ -1144,7 +1163,7 @@ img.decorative-line {
 .facts-1 .facts-1-image-pane {
 	height: 350px;
 	margin: auto;
-	background: url('../images/facts-1.jpg') center no-repeat;
+	background: url('../images/ws-7.jpg') center no-repeat;
 	background-size: cover;
 }
 
@@ -1190,7 +1209,7 @@ img.decorative-line {
 .facts-2 .facts-2-image-pane {
 	height: 350px;
 	margin: auto;
-	background: linear-gradient(rgba(255, 99, 30, 0.0), rgba(255, 99, 30, 0.0)), url('../images/facts-2.jpg') center no-repeat;
+	background: linear-gradient(rgba(255, 99, 30, 0.0), rgba(255, 99, 30, 0.0)), url('../images/ws-8.jpg') center no-repeat;
 	background-size: cover;
 }
 
