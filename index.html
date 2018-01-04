@@ -93,7 +93,7 @@
 		<div class="flex-container-wrapper"> <!-- IE fix for vertical alignment in flex box -->
 			<div class="header-content video-section">
 					<div class="pattern-overlay">
-						<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=W02gqzO5OCY',containment:'.video-section', quality:'highres', autoPlay:true, showControls: false, startAt:0, stopAt: 15, mute:true, opacity: 1}"></a>
+						<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=5f_4urZ_tEE',containment:'.video-section', quality:'small', autoPlay:true, showControls: false, startAt:0, stopAt: 60, mute:true, opacity: 0.3}"></a>
 						<div class="container">
 							<div class="row">
 								<div class="header-content-wrapper">
@@ -107,6 +107,7 @@
 									<div class="col-md-6">
 										<form data-toggle="validator" action="https://formspree.io/contato@weberschool.com.br" method="POST">
 											<input type="hidden" name="_subject" value="Inscrição Curso Front-end!" />
+											<input type="hidden" name="_next" value="//site.io/thanks.html" />
 
 											<p><strong>Nome *</strong></p>
 											<div class="form-group">
@@ -131,6 +132,8 @@
 												<input type="email" class="form-control-input" id="email" placeholder="E-mail" name="email" required>
 												<div class="help-block with-errors"></div>
 											</div>
+
+											
 	
 											<!-- <div class="form-group">
 												<input type="checkbox" id="terms" value="Agreed-to-Terms" required> Agree to our <a class="show-terms popup-with-move-anim" href="#terms-and-conditions">terms and conditions</a>
@@ -220,7 +223,10 @@
 			<h2>Resumo</h2>
 			<img class="decorative-line" src="images/decorative-line.svg" alt="decorative line">
 			<p class="seventy-percent-width">Entenda em <strong>4 semanas</strong> os princípios de como funciona a Web e adquira conhecimentos práticos nas três tecnologias que fundamentam todos os websites: HTML, CSS e JavaScript.</p>
-			<img class="img-responsive" src="images/resumo.png" alt="web developer">
+			<!-- <img class="img-responsive" src="images/resumo.png" alt="web developer"> -->
+			<iframe id="ytplayer" type="text/html" width="720" height="405"
+src="https://www.youtube.com/embed/_FnlAiHC5mQ?cc_load_policy=1&rel=0&showinfo=0&color=white"
+frameborder="0" allowfullscreen>
 		</div> <!-- end of container -->
 	</div> <!-- end of overview -->
 	

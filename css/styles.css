@@ -151,8 +151,8 @@ img.decorative-line {
 	height: 40px;
 	width: 100%;
 	padding-left: 10px;
-	background-color: #52555f;
-	border: 1px solid #52555f;
+	background-color: transparent;
+    border: 1px solid #2296f3;
 	border-radius: 4px;	
 	color: #fff;
 	font: 300 16px/1.6em "Ubuntu", sans-serif;
@@ -603,7 +603,8 @@ img.decorative-line {
 	position: relative;
 	width: 100%;
 	min-height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../images/header-background.jpg") center no-repeat;
+	/* background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../images/header-background.jpg") center no-repeat; */
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), #32357c center no-repeat;
 	background-size: cover;
 }
 
