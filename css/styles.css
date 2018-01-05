@@ -2099,3 +2099,17 @@ a:hover.back-to-top {
 #js-rotating {
 	color: #2196F3;
 }
+
+/* EMBED */
+.overview-video-wrapper {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.videoWrapper {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
