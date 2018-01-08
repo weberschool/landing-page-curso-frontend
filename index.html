@@ -714,15 +714,18 @@
 				<div class="col-md-4">
 					<div class="footer-pane">
 						<!-- Contact Form -->
-						<form id="ContactForm" data-toggle="validator">
+						<form data-toggle="validator" action="https://formspree.io/contato@weberschool.com.br" method="POST">
+							
+							<input type="hidden" name="_subject" value="Contato do Site WeberSchool" />
+
 							<div class="form-group first">
-								<input type="text" class="form-control-input" id="cname" placeholder="Nome" required>
+								<input type="text" class="form-control-input" name="name" id="cname" placeholder="Nome" required>
 							</div>
 							<div class="form-group second">
-								<input type="email" class="form-control-input" id="cemail" placeholder="E-mail" required>
+								<input type="email" class="form-control-input" name="email" id="cemail" placeholder="E-mail" required>
 							</div>
 							<div class="form-group third">
-								<textarea class="form-control-textarea" id="cmessage" placeholder="Escreva sua mensagem aqui" rows="4" required></textarea>
+								<textarea class="form-control-textarea" name="message" id="cmessage" placeholder="Escreva sua mensagem aqui" rows="4" required></textarea>
 							</div>
 							<button type="submit" class="form-control-submit-button">ENVIAR</button>
 							<div class="form-message">
