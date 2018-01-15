@@ -53,7 +53,7 @@
 	
 	
 	/* COUNTDOWN TIMER */
-	$('#clock').countdown('2018/01/14 23:59:59') /* change here your "countdown to" date */
+	$('#clock').countdown('2018/02/03 23:59:59') /* change here your "countdown to" date */
 	.on('update.countdown', function(event) {
 		var format = '<span class="counter-number">%D<br><span class="timer-text">Days</span></span><span class="separator">:</span><span class="counter-number">%H<br><span class="timer-text">Hours</span></span><span class="separator">:</span><span class="counter-number">%M<br><span class="timer-text">Minutes</span></span><span class="separator">:</span><span class="counter-number">%S<br><span class="timer-text">Seconds</span></span>';
 			
